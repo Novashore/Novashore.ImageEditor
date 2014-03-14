@@ -88,7 +88,7 @@ $(function() {
 		edit: function() {
 			this.modal = new Backbone.BootstrapModal
 			({
-				content: '<input type="file" id="fileinput" /><table><tbody><tr><td>size</td><td><input type="range" min="0" max="100" value="100" id="slider" />%</td><tr><td>Width</td><td><input id="cnvwidth" style="margin-left: 20px; width: 100px;" type="text" value="200" />px</td></tr><tr><td>Height</td><td><input id="cnvheight" style="margin-left: 20px; width: 100px;" type="text" value="200" />px</td></tr></tbody></table><canvas width="200px" height="200px" style="border: 1px solid black;" id="canvas"></canvas>',
+				content: 'Your file : <input type="file" id="fileinput" /><br/><br/><table><tbody><tr><td>size</td><td><input type="range" min="0" max="100" value="100" id="slider" />%</td><tr><td>Width</td><td><input id="cnvwidth" style="margin-left: 20px; width: 100px;" type="text" value="200" />px</td></tr><tr><td>Height</td><td><input id="cnvheight" style="margin-left: 20px; width: 100px;" type="text" value="200" />px</td></tr></tbody></table><canvas width="200px" height="200px" style="border: 1px solid black;" id="canvas"></canvas>',
 				id: 'imgeditor',
 				title: 'Image',
 				animate: true,
