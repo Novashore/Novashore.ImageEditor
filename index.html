@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta charset="utf-8"/>
+		<title>Novashore ImageEditor</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content=""/>
+		<meta name="author" content="novashore"/>
+					
+
+		 
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//documentcloud.github.com/underscore/underscore-min.js"></script>
+		<script type="text/javascript" src="//documentcloud.github.com/backbone/backbone-min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone-forms/0.12.0/backbone-forms.min.js"></script>
+		
+		
+		<script type="text/javascript" src="js/backbone.bootstrap-modal.js"></script>
+		<script type="text/javascript" src="js/Novashore.ImageEditor.js"></script>
+
+		<link type="text/css"  rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css"/>
+
+		<script>$(function() {
+			 
+				 
+				var imageEditor = new Novashore.ImageEditor({
+					model: new Backbone.Model({myImage: './images/image.png'}),
+					key: 'myImage',
+				}).render()
+
+				$('body').append('<div>Click on this picture : </div>');
+				$('body').append(imageEditor.$el);
+				$('body').append('<div>Made by <a href="">Novashore offshore web & mobile development </a> </div>');
+
+			
+			});
+		</script>
+		
+		
+		
+
+
+	</head>
+	<body>
+	</body>
+</html>
