@@ -1,4 +1,4 @@
-#backbone-forms
+# backbone-forms ImageEditor 
 
 current version 0.1
 
